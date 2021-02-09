@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Home from '../containers/Home';
 import Details from '../containers/Details';
-import Header from '../Header';
+import Header from '../headers/Header';
 
 export default function App() {
 
@@ -15,6 +15,7 @@ export default function App() {
       
       <div className="main">
         <Router>
+          <Header/> 
           <Switch>
         
             <Route
