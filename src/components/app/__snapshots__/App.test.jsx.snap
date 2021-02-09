@@ -2,8 +2,31 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <div
+    class="main"
+  >
+    <div
+      class="headerDiv"
+    >
+      <h2>
+        Animal Crossing Villager Station
+      </h2>
+      <div>
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
+          style="display: none;"
+        >
+          <h3>
+            Back to Home
+          </h3>
+        </a>
+      </div>
+    </div>
+    <h1>
+      loading
+    </h1>
+  </div>
 </DocumentFragment>
 `;

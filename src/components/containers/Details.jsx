@@ -1,5 +1,5 @@
 import React from 'react';
-import { useVillagerById } from '../hooks/villagerById'
+import { useVillagerById } from '../hooks/villagerById';
 import VillagerDetails from '../villagers/VillagerDetails';
 
 const Details = () => {
@@ -14,7 +14,6 @@ const Details = () => {
       skill={villager.skill}
       birthday={villager.birthday}
     />
-    
   </>;
 };
 
