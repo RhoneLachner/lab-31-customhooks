@@ -44,3 +44,13 @@ a {
     align-items: center;
     align-self: center;
 }
+
+.headerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(208, 221, 238);
+    
+}
