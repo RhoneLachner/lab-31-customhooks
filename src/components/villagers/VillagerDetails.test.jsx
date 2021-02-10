@@ -5,7 +5,9 @@ import VillagerDetails from './VillagerDetails';
 describe('VillagerDetails component', () => {
   afterEach(() => cleanup());
   it('renders VillagerDetails', () => {
-    const { asFragment } = render(<VillagerDetails />);
+    const { asFragment } = render(<VillagerDetails 
+    //props here
+    />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

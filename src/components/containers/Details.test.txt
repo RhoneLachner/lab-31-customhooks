@@ -2,13 +2,13 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import React from 'react';
 import { render, cleanup, act } from '@testing-library/react';
-import Home from './Home';
+import Details from './VillagerById';
 act(() => {
-  describe('Home component', 
+  describe('Details component', 
     () => {
       afterEach(() => cleanup());
-      it('renders Home', () => {
-        const { asFragment } = render(<Router><Home/></Router>);
+      it('renders Details', () => {
+        const { asFragment } = render(<Router><Details/></Router>);
         expect(asFragment()).toMatchSnapshot;
       });
     });

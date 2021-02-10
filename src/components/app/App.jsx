@@ -4,8 +4,8 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Home from '../containers/Home';
-import Details from '../containers/Details';
+import VillagerListHome from '../containers/VillagerListHome';
+import VillagerByIdDetails from '../containers/VillagerByIdDetails';
 import Header from '../headers/Header';
 
 export default function App() {
@@ -21,12 +21,12 @@ export default function App() {
             <Route
               path="/"
               exact
-              component = { Home }
+              component = { VillagerListHome }
             />
             <Route
               path="/details/:_id"
               exact
-              component = { Details }
+              component = { VillagerByIdDetails }
             />
            
           </Switch>

@@ -1,9 +1,10 @@
 import React from 'react';
 import { useVillagerById } from '../hooks/villagerById';
 import VillagerDetails from '../villagers/VillagerDetails';
+import PropTypes from 'prop-types';
 
-const Details = () => {
-  const { loading, villager } = useVillagerById();
+const VillagerByIdDetails = ({ match }) => {
+  const { loading, villager } = useVillagerById(match.params._id);
 
   if(loading) return <h1>loading</h1>;
   return <>
@@ -17,4 +18,12 @@ const Details = () => {
   </>;
 };
 
-export default Details;
+VillagerByIdDetails.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      _id: PropTypes.string.isRequired
+    }).isRequired
+  }).isRequired
+};
+
+export default VillagerByIdDetails;
