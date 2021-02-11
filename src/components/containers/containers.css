@@ -52,5 +52,22 @@ a {
     text-align: center;
     align-items: center;
     background-color: rgb(208, 221, 238);
-    
+      
 }
+
+
+
+    .light {
+    background-color: white;
+    }
+
+    .dark {
+        background-color: rgb(16, 16, 16);
+        color: white;
+        text-decoration-color: white;
+
+        .headerDiv {
+            background-color: rgb(157, 136, 189);
+            
+        }
+    }

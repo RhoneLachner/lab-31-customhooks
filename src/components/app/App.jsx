@@ -7,6 +7,7 @@ import {
 import VillagerListHome from '../containers/VillagerListHome';
 import VillagerByIdDetails from '../containers/VillagerByIdDetails';
 import Header from '../headers/Header';
+import  { ThemeProvider } from '../state/themeContext';
 
 export default function App() {
 
@@ -15,21 +16,23 @@ export default function App() {
       
       <div className="main">
         <Router>
-          <Header/> 
-          <Switch>
+          <ThemeProvider>
+            <Header/> 
+            <Switch>
         
-            <Route
-              path="/"
-              exact
-              component = { VillagerListHome }
-            />
-            <Route
-              path="/details/:_id"
-              exact
-              component = { VillagerByIdDetails }
-            />
+              <Route
+                path="/"
+                exact
+                component = { VillagerListHome }
+              />
+              <Route
+                path="/details/:_id"
+                exact
+                component = { VillagerByIdDetails }
+              />
            
-          </Switch>
+            </Switch>
+          </ThemeProvider>
         </Router>
       </div>
       

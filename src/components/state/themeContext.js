@@ -24,6 +24,10 @@ export const ThemeProvider = ({ children }) => {
 
 export const useTheme = () => {
   const { theme, selectTheme } = useContext(ThemeContext);
-  return { theme, selectTheme };
+
+  return { 
+    theme, 
+    selectTheme 
+  };
 };
 
